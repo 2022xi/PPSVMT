@@ -1,2 +1,4 @@
 # PPSVMT
-This project aims at the status quo of "information silos" and accomplishes federal learning under privacy protection. Based on Paillier encryption system, model parameters are encrypted, gradients are updated locally and SVM model training is completed jointly, which can protect data samples and model training parameters from leakage at the same time. Paillier encryption system has the characteristics of addition and number multiplication homomorphism, but the ordinary SVM model training algorithm is complex, not only contains addition and number multiplication two operations, so we take exponential second-order Taylor expansion as the loss function, using gradient descent method to locally optimize the model parameters. Through federated learning, the high-precision SVM model is finally trained under the condition of protecting data samples and model training parameters.
+## 介绍
+
+该项目针对“信息孤岛”现状，完成隐私保护下的联邦学习。基于Paillier加密系统对模型参数进行加密，在本地更新梯度，共同完成SVM模型训练，可以同时保护数据样本和模型训练参数不被泄漏。Paillier加密系统具有加法和数乘同态的特性，但是寻常的SVM模型训练算法计算复杂，不仅仅含有加法和数乘两种运算，于是我们以指数二阶泰勒展开式作为损失函数，采用梯度下降法对模型参数在本地进行优化，通过联邦学习最终在保护数据样本和模型训练参数的情况下训练出高精度的SVM模型。
